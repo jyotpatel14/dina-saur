@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=3 uid="uid://cna8fc3o5jcqq"]
+
+[ext_resource type="Texture2D" uid="uid://blco6nn0fgkb" path="res://assets/Jungle Asset Pack/Jungle Asset Pack/parallax background/plx-1.png" id="1_w68nc"]
+[ext_resource type="Texture2D" uid="uid://bi1bn7x8peit7" path="res://assets/Jungle Asset Pack/Jungle Asset Pack/parallax background/plx-2.png" id="2_bf1jy"]
+[ext_resource type="Texture2D" uid="uid://bqpfjta5la8k1" path="res://assets/Jungle Asset Pack/Jungle Asset Pack/parallax background/plx-3.png" id="3_r6ch1"]
+[ext_resource type="Texture2D" uid="uid://b3nt6qsqjp1rr" path="res://assets/Jungle Asset Pack/Jungle Asset Pack/parallax background/plx-4.png" id="4_4la4c"]
+[ext_resource type="Texture2D" uid="uid://dygmqtldgyfai" path="res://assets/Jungle Asset Pack/Jungle Asset Pack/parallax background/plx-5.png" id="5_j28yk"]
+
+[node name="Bg" type="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("1_w68nc")
+centered = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("2_bf1jy")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.7, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("3_r6ch1")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.8, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("4_4la4c")
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("5_j28yk")
+centered = false

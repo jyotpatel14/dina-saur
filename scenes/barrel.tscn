@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://7kdpaygt7k0r"]
+
+[ext_resource type="Texture2D" uid="uid://b80ambpuvg8nl" path="res://assets/free-swamp-game-tileset-pixel-art/3 Objects/Boxes/3.png" id="1_q36op"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ptqd7"]
+size = Vector2(28, 28)
+
+[node name="Barrel" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("1_q36op")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_ptqd7")

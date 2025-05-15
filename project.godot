@@ -1,0 +1,17 @@
+config_version=5
+
+[application]
+
+config/name="dina-suar"
+run/main_scene="uid://bf1rrkcdc8162"
+config/features=PackedStringArray("4.4", "Mobile")
+
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_width"
+
+[rendering]
+
+renderer/rendering_method="mobile"
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
